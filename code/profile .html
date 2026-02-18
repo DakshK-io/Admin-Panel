@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="/css/bootstrap2.min.css">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" hidden>
+    <label for="sidebar-toggle" class="sidebar-toggle-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <div class="sidebar" id="sidebar">
+        <img src="/images/GenXAILatest 2.png" alt="GenX AI Logo" class="logo">
+        <img src="/images/circle-user.png" alt="User Profile Icon" class="logo-user">
+        <h2>Welcome User</h2>
+        <nav>
+            <a href="/code/dashboard.html"><img src="/images/dashboard-monitor.png" alt="Dashboard Icon">Dashboard</a>
+            <a href="/code/profile .html" class="active"><img src="/images/user.png" alt="Profile Icon">Profile</a>
+            <a href="/code/data.html"><img src="/images/analyticsd.png" alt="DATA Icon">Data Visualization</a>
+            <a href="/code/settings.html"><img src="/images/settings.png" alt="Settings Icon">Settings</a>
+            <a href="/code/index.html"><img src="/images/power.png" alt="Logout Icon">Logout</a>
+            
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <div class="dashboard-header">
+            <h1>Profile</h1>
+        </div>
+        
+        <div class="profile-card text-center">
+            <img src="/images/circle-user.png" alt="User Profile Picture" class="profile-img">
+            <h2 class="text-centerheading">User</h2>
+            <p>UI/UX Designer & Web Developer</p>
+            <div class="profile-details">
+                <p><span>Email:</span> user@gmail.com</p>
+                <p><span>Location:</span> ghaziabad,up.india</p>
+                <p><span>Joined:</span> January 2024</p>
+            </div>
+            <div class="mt-4">
+                <a href="#" class="btn">Edit Profile</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (localStorage.getItem('darkMode') === 'true') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
+</body>
+</html>
