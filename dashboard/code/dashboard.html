@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/css/bootstrap2.min.css">
+</head>
+<body>
+
+  <input type="checkbox" id="sidebar-toggle" hidden>
+<label for="sidebar-toggle" class="sidebar-toggle-btn">
+  <span></span>
+  <span></span>
+  <span></span>
+</label>
+    
+    <div class="sidebar" id="sidebar">
+        <img src="/images/GenXAILatest 2.png" alt="GenX AI Logo" class="logo">
+        <img src="/images/circle-user.png" alt="User Profile Icon" class="logo-user">
+        <h2>Welcome User</h2>
+        <nav>
+            <a href="/code/dashboard.html" class="active"><img src="/images/dashboard-monitor.png" alt="Dashboard Icon">Dashboard</a>
+            <a href="/code/profile .html"><img src="/images/user.png" alt="Profile Icon">Profile</a>
+             <a href="/code/data.html"><img src="/images/analyticsd.png" alt="DATA Icon">Data Visualization</a>
+            <a href="/code/settings.html"><img src="/images/settings.png" alt="Settings Icon">Settings</a>
+            <a href="/code/index.html"><img src="/images/power.png" alt="Logout Icon">Logout</a>
+           
+        </nav>
+    </div>
+
+        </nav>
+    </div>
+
+ 
+    <div class="main-content">
+        <div class="dashboard-header">
+            <h1>Dashboard</h1>
+        </div>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <div class="card">
+                        <img src="/images/users-alt.png" alt="User Icon" class="card-icon">
+                        <div class="card-title">Registered User</div>
+                        <div class="card-value">12310</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card">
+                        <img src="/images/site.png" alt="Online Icon" class="card-icon">
+                        <div class="card-title">Online Users</div>
+                        <div class="card-value">8617</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card">
+                        <img src="/images/store.png" alt="Store Icon" class="card-icon">
+                        <div class="card-title">Offline Users</div>
+                        <div class="card-value">3693</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card">
+                        <img src="/images/chart-histogram.png" alt="Chart Icon" class="card-icon">
+                        <div class="card-title">Revenue</div>
+                        <div class="card-value">₹51,239,234</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card">
+                        <img src="/images/india-map.png" alt="India Map Icon" class="card-icon">
+                        <div class="card-title">India Branch</div>
+                        <div class="card-value">9478.7</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card">
+                        <img src="/images/17695750.png" alt="USA Icon" class="card-icon">
+                        <div class="card-title">USA Branch</div>
+                        <div class="card-value">2831.3</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (localStorage.getItem('darkMode') === 'true') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
+</body>
