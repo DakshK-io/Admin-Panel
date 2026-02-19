@@ -10,9 +10,9 @@
     <div class="d-flex justify-content-center align-items-center vh-100">
         <div class="card" style="width: 30rem;">
             <div class="card-body">
-                <img src="/images/GenXAILatest.png" alt="Logo" class="img-shadow" style="display:block; margin:0 auto 1rem; max-width:250px;" alinment ="center">
+                <img src="images/GenXAILatest.png" alt="Logo" class="img-shadow" style="display:block; margin:0 auto 1rem; max-width:250px;">
                 <h1 class="text-centerheading">LOGIN TO CONTINUE</h1>
-                <form action="/code/dashboard.html" method="get">
+                <form action="dashboard.html" method="get">
                     <div class="mb-4">
                         <label for="username" class="form-label">Enter Your Username</label>
                         <input type="text" class="form-control" id="username" name="username" required>
@@ -30,10 +30,17 @@
             </div>
         </div>
     </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (localStorage.getItem('darkMode') === 'true') {
+                document.body.classList.add('dark-mode');
+            }
+        });
     </script>
 </body>
 </html>
-    
+
 
 
 
